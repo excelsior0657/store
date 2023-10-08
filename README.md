@@ -1,5 +1,5 @@
 # store
-使用IDEA开发的一款商城平台，已实现用户登录注册、商品展示、个人资料、购物车、商品下单等功能
+使用IDEA开发的一款简易的商城项目，已实现商城的基本功能
 
 **技术架构：**
 Mybatis、SpringBoot、MySQL、Maven、Ajax
