@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!--edge浏览器H5兼容设置-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--360浏览器H5兼容设置-->
+		<meta name="renderer" content="webkit" />
+		<title>电脑商城</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--导入核心文件-->
+		<script src="../bootstrap3/js/holder.js"></script>
+		<link href="../bootstrap3/css/bootstrap.css" rel="stylesheet" type="text/css">
+		<script src="../bootstrap3/jquery-1.9.1.min.js"></script>
+		<script src="../bootstrap3/js/bootstrap.js"></script>
+		<!-- 字体图标 -->
+		<link rel="stylesheet" href="../bootstrap3/font-awesome-4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="../css/top.css" />
+		<link rel="stylesheet" type="text/css" href="../css/footer.css" />
+	</head>
+
+	<body>
+		<!--头部-->
+		<header class="header">
+			<!--电脑商城logo-->
+			<div class="row">
+				<div class="col-md-3">
+					<a href="index.html">
+						<img src="../images/index/stumalllogo.png" />
+					</a>
+				</div>
+				<!--快捷选项-->
+				<div class="col-md-9 top-item">
+					<ul class="list-inline pull-right">
+						<li><a href="favorites.html"><span class="fa fa-heart"></span>&nbsp;收藏</a></li>
+						<li class="li-split">|</li>
+						<li><a href="orders.html"><span class="fa fa-file-text"></span>&nbsp;订单</a></li>
+						<li class="li-split">|</li>
+						<li><a href="cart.html"><span class="fa fa-cart-plus"></span>&nbsp;购物车</a></li>
+						<li class="li-split">|</li>
+						<li>
+							<!--下列列表按钮 ：管理-->
+							<div class="btn-group">
+								<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+									<span id="top-dropdown-btn"><span class="fa fa-gears"></span>&nbsp;管理 <span class="caret"></span></span>
+								</button>
+								<ul class="dropdown-menu top-dropdown-ul" role="menu">
+									<li><a href="password.html">修改密码</a></li>
+									<li><a href="userdata.html">个人资料</a></li>
+									<li><a href="upload.html">上传头像</a></li>
+									<li><a href="address.html">收货管理	</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="li-split">|</li>
+						<li><a href="login.html"><span class="fa fa-user"></span>&nbsp;登录</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!--导航 -->
+		<!--分割导航和顶部-->
+		<div class="row top-nav">
+			<div class="col-md-6">
+				<ul class="nav nav-pills">
+					<li>
+						<a href="#"></a>
+					</li>
+					<li class="active"><a href="index.html"><span class="fa fa-home"></span></a></li>
+					<li><a href="#">秒杀</a></li>
+					<li><a href="#">优惠券</a></li>
+					<li><a href="#">电脑VIP</a></li>
+					<li><a href="#">外卖</a></li>
+					<li><a href="#">超市</a></li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<form action="search.html" class="form-inline pull-right" role="form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="search" name="search" placeholder="请输入商品名称进行搜索">
+					</div>
+					<button type="submit" class="btn btn-default btn-sm"><span class="fa fa-search"></span></button>
+				</form>
+			</div>
+		</div>
+		<!--头部结束-->
+		<!--导航结束-->
+		<div class="container">
+			<div class="col-md-2">
+				<!--左侧导航开始-->
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<!--主选项：我的订单-->
+							<p class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">我的订单</a>
+							</p>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse">
+							<div class="panel-body">
+								<div><a href="orders.html">全部订单</a></div>
+								<div><a href="orders.html">待付款</a></div>
+								<div><a href="orders.html">待收货</a></div>
+								<div><a href="orders.html">待评价</a></div>
+								<div><a href="orders.html">退货退款</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<!--主选项：资料修改-->
+							<p class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">资料修改</a>
+							</p>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div><a href="password.html">修改密码</a></div>
+								<div><a href="userdata.html"><b>个人资料</b></a></div>
+								<div><a href="upload.html">上传头像</a></div>
+								<div><a href="address.html">收货管理</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--左侧导航结束-->
+			</div>
+			<div class="col-md-10	">
+				<div class="panel panel-default">
+					<ul class="nav nav-tabs">
+						<li><a href="password.html">修改密码</a></li>
+						<li class="active"><a href="#">个人资料</a></li>
+						<li><a href="upload.html">上传头像</a></li>
+						<li><a href="address.html">收货管理</a></li>
+					</ul>
+					<div class="panel-body">
+						<!--修改资料表单开始-->
+						<form id="form-change-info" class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-md-2 control-label">用户名：</label>
+								<div class="col-md-8">
+									<input id="username" type="text" class="form-control" value="孙悟空" readonly="readonly">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">电话号码：</label>
+								<div class="col-md-8">
+									<input id="phone" name="phone" type="text" class="form-control" placeholder="请输入电话号码" value="13311311313">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">电子邮箱：</label>
+								<div class="col-md-8">
+									<input id="email" name="email" type="text" class="form-control" placeholder="请输入电子邮箱" value="sunwk@qq.com">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">性别：</label>
+								<div class="col-md-8">
+									<label class="radio-inline">
+										<input id="gender-male" type="radio" name="gender" value="1">男
+									</label>
+									<label class="radio-inline">
+										<input id="gender-female" type="radio" name="gender" value="0">女
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<input id="btn-change-info" type="button" class="btn btn-primary" value="修改" />
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$("#btn-change-info").click(function () {
+				$.ajax({
+					url:"/users/change_info",
+					type:"POST",
+					data:$("#form-change-info").serialize(),
+					dataType:"JSON",
+					success:function (json) {
+						if(json.state==200){
+							alert("用户信息修改成功");
+							// 重新加载当前页面
+							location.href="userdata.html";
+						}else{
+							alert("用户信息修改失败");
+						}
+					},
+					error:function (xhr) {
+						alert("用户信息修改时发生未知异常"+xhr.message);
+					}
+				});
+			});
+			// 一旦检测到当前页面被加载就会触发ready方法
+			// $(document).ready(function () {
+			//	// 业务代码
+			// });
+			$(document).ready(function () {
+				$.ajax({
+					url:"/users/get_by_uid",
+					type:"GET",
+					data:$("#form-change-info").serialize(),
+					dataType:"JSON",
+					success:function (json) {
+						if(json.state==200){
+							// 将查询到的数据重新设置到控件中
+							$("#username").val(json.data.username);
+							$("#phone").val(json.data.phone);
+							$("#email").val(json.data.email);
+							let radio = json.data.gender==0?$("#gender-female"):$("#gender-male");
+							// prop()表示给某个元素添加属性及属性的值
+							radio.prop("checked","checked");
+						}else{
+							alert("用户数据不存在");
+						}
+					},
+					error:function (xhr) {
+						alert("查询用户信息时产生未知异常"+xhr.message);
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>
