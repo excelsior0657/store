@@ -5,6 +5,7 @@
 Mybatis、SpringBoot、MySQL、Maven、Ajax
 
 **功能架构：**
+
 1.用户注册、登录、并用md5算法加密，以及修改密码功能
 
 2.实现商品展示和分页
@@ -22,4 +23,5 @@ Mybatis、SpringBoot、MySQL、Maven、Ajax
 8.支付功能，用户可批量选择购买购物车中的商品
 
 **数据库设计的数据：**
+
 用户、商品、商品类别、收藏、订单、购物车、收货地址
